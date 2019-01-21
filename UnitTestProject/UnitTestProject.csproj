@@ -57,9 +57,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Test\Test.csproj">
-      <Project>{df951305-567e-440f-949b-8abe77afcb74}</Project>
-      <Name>Test</Name>
+    <ProjectReference Include="..\DotNetDateUtils\DotNetDateUtils.csproj">
+      <Project>{4b7d1d2f-84ff-422e-9651-140d3a88c87e}</Project>
+      <Name>DotNetDateUtils</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

@@ -22,9 +22,15 @@ namespace DotNetDateUtils
 			return daysUntil;
 		}
 
+		/// <summary>
+		/// Finds the date (without time) of the next future occurrence of a specific date of the week
+		/// </summary>
+		/// <param name="date"></param>
+		/// <param name="day"></param>
+		/// <returns></returns>
 		public static DateTime DateOf(this DateTime date, DayOfWeek day)
 		{
-			return DateTime.Today.AddDays(DaysUntil(date, day));
+			return date.AddDays(DaysUntil(date, day)).Date;
 		}
 
 		public static TimeSpan TimeUntil(this DateTime date, DayOfWeek day, int hour, int minute = 0, int second = 0, int millisecond = 0)
